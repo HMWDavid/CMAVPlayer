@@ -1,6 +1,0 @@
-framework module Pods_testSwiftAVPlayer {
-  umbrella header "Pods-testSwiftAVPlayer-umbrella.h"
-
-  export *
-  module * { export * }
-}
