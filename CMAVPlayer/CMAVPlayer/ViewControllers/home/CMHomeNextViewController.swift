@@ -23,11 +23,25 @@ class CMHomeNextViewController: CMBaseViewController,CMAVPlayerDelegate {
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.orange
         
+        let btn = UIButton()
+        btn.setTitle("popVC", for: .normal)
+        btn.backgroundColor = .orange
+        btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
+        self.view.addSubview(btn)
+        btn.snp.makeConstraints { (make) in
+            make.width.height.equalTo(80)
+            make.center.equalTo(self.view)
+        }
+        
         if self.player == nil{
             AVPlayer()
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(floatingScreenTapGesture), name: NSNotification.Name(rawValue: CMAVPlayerNotification_floatingScreenTapGesture), object: nil)
+    }
+    
+    @objc func btnClick() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func floatingScreenTapGesture(_ notification:NSNotification){

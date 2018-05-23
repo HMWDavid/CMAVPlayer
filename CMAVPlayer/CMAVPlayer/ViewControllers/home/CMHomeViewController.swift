@@ -21,8 +21,22 @@ class CMHomeViewController: CMBaseViewController,CMAVPlayerDelegate,AVPlayerView
         self.view.backgroundColor = UIColor.blue
         
         NotificationCenter.default.addObserver(self, selector: #selector(floatingScreenTapGesture), name: NSNotification.Name(rawValue: CMAVPlayerNotification_floatingScreenTapGesture), object: nil)
+        
+        let btn = UIButton()
+        btn.setTitle("pushVC", for: .normal)
+        btn.backgroundColor = .orange
+        btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
+        self.view.addSubview(btn)
+        btn.snp.makeConstraints { (make) in
+            make.width.height.equalTo(80)
+            make.center.equalTo(self.view)
+        }
     }
     
+    
+    /// 悬浮窗口模式下,tap单击手势触发了
+    ///
+    /// - Parameter notification: 通知
     @objc func floatingScreenTapGesture(_ notification:NSNotification){
         
         if self.navigationController?.viewControllers.count == 1 {
@@ -41,24 +55,11 @@ class CMHomeViewController: CMBaseViewController,CMAVPlayerDelegate,AVPlayerView
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+    @objc func btnClick() {
         let nextVC = CMHomeNextViewController()
         
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
-
-    
-    
-    
-    
-//    //如果有UINavigationController 则 UINavigationController 也要重写此方法,存在UITabBarController 时也一样
-//    override var shouldAutorotate: Bool
-//    {
-//        guard  let islock = self.player?.isLocked else { return false }
-//        return !islock
-//        
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
