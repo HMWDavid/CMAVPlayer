@@ -56,9 +56,30 @@ class CMHomeViewController: CMBaseViewController,CMAVPlayerDelegate,AVPlayerView
     }
     
     @objc func btnClick() {
-        let nextVC = CMHomeNextViewController()
         
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        var player:CMAVPlayer?
+        
+        for object in self.navigationController!.view.subviews {
+            if object.isKind(of: CMAVPlayer.self) {
+                player = object as? CMAVPlayer
+                break
+            }
+        }
+        
+        if player == nil {
+            let nextVC = CMHomeNextViewController()
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }else{
+            let nextVC = CMHomeNextViewController()
+            
+            nextVC.player = player!
+            
+            nextVC.view.addSubview(player!)
+            
+            self.navigationController?.pushViewController(nextVC, animated: true)
+            
+            player!.entranceDefultScreen()
+        }
     }
     
     override func didReceiveMemoryWarning() {
