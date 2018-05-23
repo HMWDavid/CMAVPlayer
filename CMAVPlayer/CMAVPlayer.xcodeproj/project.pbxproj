@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DFA3AAB44F46A134D8D9781 /* Pods_CMAVPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EECC2E05C41D43555B736C /* Pods_CMAVPlayer.framework */; };
+		DE11C82F20B53E9000F79E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C82E20B53E9000F79E7C /* AppDelegate.swift */; };
+		DE11C83420B53E9000F79E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE11C83220B53E9000F79E7C /* Main.storyboard */; };
+		DE11C83720B53E9000F79E7C /* CMAVPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE11C83520B53E9000F79E7C /* CMAVPlayer.xcdatamodeld */; };
+		DE11C83920B53E9200F79E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE11C83820B53E9200F79E7C /* Assets.xcassets */; };
+		DE11C83C20B53E9200F79E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE11C83A20B53E9200F79E7C /* LaunchScreen.storyboard */; };
+		DE11C84720B53E9300F79E7C /* CMAVPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C84620B53E9300F79E7C /* CMAVPlayerTests.swift */; };
+		DE11C85220B53E9300F79E7C /* CMAVPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C85120B53E9300F79E7C /* CMAVPlayerUITests.swift */; };
+		DE11C87C20B53FC400F79E7C /* CMBufferingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87320B53FC400F79E7C /* CMBufferingBackgroundView.swift */; };
+		DE11C87D20B53FC400F79E7C /* CMAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87420B53FC400F79E7C /* CMAVPlayer.swift */; };
+		DE11C87E20B53FC400F79E7C /* CMSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87520B53FC400F79E7C /* CMSliderView.swift */; };
+		DE11C87F20B53FC400F79E7C /* CMAVPlayerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87620B53FC400F79E7C /* CMAVPlayerHeaderView.swift */; };
+		DE11C88020B53FC400F79E7C /* CMAVPlayerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87720B53FC400F79E7C /* CMAVPlayerFooterView.swift */; };
+		DE11C88120B53FC400F79E7C /* brightness.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C87820B53FC400F79E7C /* brightness.png */; };
+		DE11C88220B53FC400F79E7C /* CMBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87920B53FC400F79E7C /* CMBrightnessView.swift */; };
+		DE11C88320B53FC400F79E7C /* CMSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87A20B53FC400F79E7C /* CMSlider.swift */; };
+		DE11C88420B53FC400F79E7C /* CMPlayerFailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C87B20B53FC400F79E7C /* CMPlayerFailView.swift */; };
+		DE11C88620B5402A00F79E7C /* CMCommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C88520B5402A00F79E7C /* CMCommonTool.swift */; };
+		DE11C88C20B5408300F79E7C /* CMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C88820B5408300F79E7C /* CMNavigationController.swift */; };
+		DE11C88E20B5408300F79E7C /* CMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C88A20B5408300F79E7C /* CMBaseViewController.swift */; };
+		DE11C88F20B5408300F79E7C /* CMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C88B20B5408300F79E7C /* CMTabBarController.swift */; };
+		DE11C97020B5422E00F79E7C /* CMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C96F20B5422E00F79E7C /* CMHomeViewController.swift */; };
+		DE11C97220B5423300F79E7C /* CMHomeNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C97120B5423300F79E7C /* CMHomeNextViewController.swift */; };
+		DE11C97520B5425A00F79E7C /* CMCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C97420B5425A00F79E7C /* CMCommunityViewController.swift */; };
+		DE11C97820B5427900F79E7C /* CMPersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11C97720B5427900F79E7C /* CMPersonalCenterViewController.swift */; };
+		DE11C97D20B5443D00F79E7C /* Player_back_full.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C97A20B5443C00F79E7C /* Player_back_full.png */; };
+		DE11C97E20B5443D00F79E7C /* Player_back_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C97B20B5443C00F79E7C /* Player_back_full@2x.png */; };
+		DE11C97F20B5443D00F79E7C /* Player_back_full@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C97C20B5443C00F79E7C /* Player_back_full@3x.png */; };
+		DE11C98220B5446D00F79E7C /* Player_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98020B5446D00F79E7C /* Player_close@3x.png */; };
+		DE11C98320B5446D00F79E7C /* Player_close.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98120B5446D00F79E7C /* Player_close.png */; };
+		DE11C98720B5447B00F79E7C /* Player_fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98420B5447B00F79E7C /* Player_fullscreen@2x.png */; };
+		DE11C98820B5447B00F79E7C /* Player_fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98520B5447B00F79E7C /* Player_fullscreen.png */; };
+		DE11C98920B5447B00F79E7C /* Player_fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98620B5447B00F79E7C /* Player_fullscreen@3x.png */; };
+		DE11C98D20B5448900F79E7C /* Player_lock-nor.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98A20B5448900F79E7C /* Player_lock-nor.png */; };
+		DE11C98E20B5448900F79E7C /* Player_lock-nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98B20B5448900F79E7C /* Player_lock-nor@3x.png */; };
+		DE11C98F20B5448900F79E7C /* Player_lock-nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C98C20B5448900F79E7C /* Player_lock-nor@2x.png */; };
+		DE11C99320B5449500F79E7C /* Player_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99020B5449400F79E7C /* Player_pause.png */; };
+		DE11C99420B5449500F79E7C /* Player_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99120B5449400F79E7C /* Player_pause@3x.png */; };
+		DE11C99520B5449500F79E7C /* Player_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99220B5449500F79E7C /* Player_pause@2x.png */; };
+		DE11C99720B5449E00F79E7C /* Player_play_btn_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99620B5449E00F79E7C /* Player_play_btn_small@2x.png */; };
+		DE11C99B20B544AD00F79E7C /* Player_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99820B544AC00F79E7C /* Player_play@3x.png */; };
+		DE11C99C20B544AD00F79E7C /* Player_play.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99920B544AC00F79E7C /* Player_play.png */; };
+		DE11C99D20B544AD00F79E7C /* Player_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99A20B544AC00F79E7C /* Player_play@2x.png */; };
+		DE11C9A020B544B800F79E7C /* Player_repeat_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99E20B544B800F79E7C /* Player_repeat_video@2x.png */; };
+		DE11C9A120B544B800F79E7C /* Player_repeat_video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C99F20B544B800F79E7C /* Player_repeat_video@3x.png */; };
+		DE11C9A520B544C300F79E7C /* Player_shrinkscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9A220B544C300F79E7C /* Player_shrinkscreen@2x.png */; };
+		DE11C9A620B544C300F79E7C /* Player_shrinkscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9A320B544C300F79E7C /* Player_shrinkscreen.png */; };
+		DE11C9A720B544C300F79E7C /* Player_shrinkscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9A420B544C300F79E7C /* Player_shrinkscreen@3x.png */; };
+		DE11C9AB20B544CE00F79E7C /* Player_unlock-nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9A820B544CD00F79E7C /* Player_unlock-nor@2x.png */; };
+		DE11C9AC20B544CE00F79E7C /* Player_unlock-nor.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9A920B544CD00F79E7C /* Player_unlock-nor.png */; };
+		DE11C9AD20B544CE00F79E7C /* Player_unlock-nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9AA20B544CD00F79E7C /* Player_unlock-nor@3x.png */; };
+		DE11C9B020B544DD00F79E7C /* sliderBtnImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9AE20B544DD00F79E7C /* sliderBtnImage@2x.png */; };
+		DE11C9B120B544DD00F79E7C /* sliderBtnImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9AF20B544DD00F79E7C /* sliderBtnImage@3x.png */; };
+		DE11C9B320B5457300F79E7C /* 1241_5bcc269bc8400733b98aa1f9b24b5925_20180416094812.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DE11C9B220B5457300F79E7C /* 1241_5bcc269bc8400733b98aa1f9b24b5925_20180416094812.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE11C84320B53E9300F79E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE11C82320B53E9000F79E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE11C82A20B53E9000F79E7C;
+			remoteInfo = CMAVPlayer;
+		};
+		DE11C84E20B53E9300F79E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE11C82320B53E9000F79E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE11C82A20B53E9000F79E7C;
+			remoteInfo = CMAVPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		950914412DA0CCDDD8841FCA /* Pods-CMAVPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMAVPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMAVPlayer/Pods-CMAVPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		99EECC2E05C41D43555B736C /* Pods_CMAVPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMAVPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91AF6ED491DC5ECB29ADB50 /* Pods-CMAVPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMAVPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMAVPlayer/Pods-CMAVPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		DE11C82B20B53E9000F79E7C /* CMAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE11C82E20B53E9000F79E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE11C83320B53E9000F79E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE11C83620B53E9000F79E7C /* CMAVPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CMAVPlayer.xcdatamodel; sourceTree = "<group>"; };
+		DE11C83820B53E9200F79E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE11C83B20B53E9200F79E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE11C83D20B53E9200F79E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE11C84220B53E9300F79E7C /* CMAVPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMAVPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE11C84620B53E9300F79E7C /* CMAVPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAVPlayerTests.swift; sourceTree = "<group>"; };
+		DE11C84820B53E9300F79E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE11C84D20B53E9300F79E7C /* CMAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE11C85120B53E9300F79E7C /* CMAVPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAVPlayerUITests.swift; sourceTree = "<group>"; };
+		DE11C85320B53E9300F79E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE11C87320B53FC400F79E7C /* CMBufferingBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMBufferingBackgroundView.swift; sourceTree = "<group>"; };
+		DE11C87420B53FC400F79E7C /* CMAVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAVPlayer.swift; sourceTree = "<group>"; };
+		DE11C87520B53FC400F79E7C /* CMSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMSliderView.swift; sourceTree = "<group>"; };
+		DE11C87620B53FC400F79E7C /* CMAVPlayerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAVPlayerHeaderView.swift; sourceTree = "<group>"; };
+		DE11C87720B53FC400F79E7C /* CMAVPlayerFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAVPlayerFooterView.swift; sourceTree = "<group>"; };
+		DE11C87820B53FC400F79E7C /* brightness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness.png; sourceTree = "<group>"; };
+		DE11C87920B53FC400F79E7C /* CMBrightnessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMBrightnessView.swift; sourceTree = "<group>"; };
+		DE11C87A20B53FC400F79E7C /* CMSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMSlider.swift; sourceTree = "<group>"; };
+		DE11C87B20B53FC400F79E7C /* CMPlayerFailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMPlayerFailView.swift; sourceTree = "<group>"; };
+		DE11C88520B5402A00F79E7C /* CMCommonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMCommonTool.swift; sourceTree = "<group>"; };
+		DE11C88820B5408300F79E7C /* CMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNavigationController.swift; sourceTree = "<group>"; };
+		DE11C88A20B5408300F79E7C /* CMBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMBaseViewController.swift; sourceTree = "<group>"; };
+		DE11C88B20B5408300F79E7C /* CMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMTabBarController.swift; sourceTree = "<group>"; };
+		DE11C96F20B5422E00F79E7C /* CMHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMHomeViewController.swift; sourceTree = "<group>"; };
+		DE11C97120B5423300F79E7C /* CMHomeNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMHomeNextViewController.swift; sourceTree = "<group>"; };
+		DE11C97420B5425A00F79E7C /* CMCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMCommunityViewController.swift; sourceTree = "<group>"; };
+		DE11C97720B5427900F79E7C /* CMPersonalCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMPersonalCenterViewController.swift; sourceTree = "<group>"; };
+		DE11C97A20B5443C00F79E7C /* Player_back_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_back_full.png; sourceTree = "<group>"; };
+		DE11C97B20B5443C00F79E7C /* Player_back_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_back_full@2x.png"; sourceTree = "<group>"; };
+		DE11C97C20B5443C00F79E7C /* Player_back_full@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_back_full@3x.png"; sourceTree = "<group>"; };
+		DE11C98020B5446D00F79E7C /* Player_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_close@3x.png"; sourceTree = "<group>"; };
+		DE11C98120B5446D00F79E7C /* Player_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_close.png; sourceTree = "<group>"; };
+		DE11C98420B5447B00F79E7C /* Player_fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_fullscreen@2x.png"; sourceTree = "<group>"; };
+		DE11C98520B5447B00F79E7C /* Player_fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_fullscreen.png; sourceTree = "<group>"; };
+		DE11C98620B5447B00F79E7C /* Player_fullscreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_fullscreen@3x.png"; sourceTree = "<group>"; };
+		DE11C98A20B5448900F79E7C /* Player_lock-nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_lock-nor.png"; sourceTree = "<group>"; };
+		DE11C98B20B5448900F79E7C /* Player_lock-nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_lock-nor@3x.png"; sourceTree = "<group>"; };
+		DE11C98C20B5448900F79E7C /* Player_lock-nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_lock-nor@2x.png"; sourceTree = "<group>"; };
+		DE11C99020B5449400F79E7C /* Player_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_pause.png; sourceTree = "<group>"; };
+		DE11C99120B5449400F79E7C /* Player_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_pause@3x.png"; sourceTree = "<group>"; };
+		DE11C99220B5449500F79E7C /* Player_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_pause@2x.png"; sourceTree = "<group>"; };
+		DE11C99620B5449E00F79E7C /* Player_play_btn_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_play_btn_small@2x.png"; sourceTree = "<group>"; };
+		DE11C99820B544AC00F79E7C /* Player_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_play@3x.png"; sourceTree = "<group>"; };
+		DE11C99920B544AC00F79E7C /* Player_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_play.png; sourceTree = "<group>"; };
+		DE11C99A20B544AC00F79E7C /* Player_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_play@2x.png"; sourceTree = "<group>"; };
+		DE11C99E20B544B800F79E7C /* Player_repeat_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_repeat_video@2x.png"; sourceTree = "<group>"; };
+		DE11C99F20B544B800F79E7C /* Player_repeat_video@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_repeat_video@3x.png"; sourceTree = "<group>"; };
+		DE11C9A220B544C300F79E7C /* Player_shrinkscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_shrinkscreen@2x.png"; sourceTree = "<group>"; };
+		DE11C9A320B544C300F79E7C /* Player_shrinkscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_shrinkscreen.png; sourceTree = "<group>"; };
+		DE11C9A420B544C300F79E7C /* Player_shrinkscreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_shrinkscreen@3x.png"; sourceTree = "<group>"; };
+		DE11C9A820B544CD00F79E7C /* Player_unlock-nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_unlock-nor@2x.png"; sourceTree = "<group>"; };
+		DE11C9A920B544CD00F79E7C /* Player_unlock-nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_unlock-nor.png"; sourceTree = "<group>"; };
+		DE11C9AA20B544CD00F79E7C /* Player_unlock-nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player_unlock-nor@3x.png"; sourceTree = "<group>"; };
+		DE11C9AE20B544DD00F79E7C /* sliderBtnImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliderBtnImage@2x.png"; sourceTree = "<group>"; };
+		DE11C9AF20B544DD00F79E7C /* sliderBtnImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliderBtnImage@3x.png"; sourceTree = "<group>"; };
+		DE11C9B220B5457300F79E7C /* 1241_5bcc269bc8400733b98aa1f9b24b5925_20180416094812.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1241_5bcc269bc8400733b98aa1f9b24b5925_20180416094812.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE11C82820B53E9000F79E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFA3AAB44F46A134D8D9781 /* Pods_CMAVPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11C83F20B53E9300F79E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11C84A20B53E9300F79E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		221D5AE9B994255617BED129 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				950914412DA0CCDDD8841FCA /* Pods-CMAVPlayer.debug.xcconfig */,
+				D91AF6ED491DC5ECB29ADB50 /* Pods-CMAVPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2B151CF3A4B568A0C016D0EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99EECC2E05C41D43555B736C /* Pods_CMAVPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE11C82220B53E9000F79E7C = {
+			isa = PBXGroup;
+			children = (
+				DE11C82D20B53E9000F79E7C /* CMAVPlayer */,
+				DE11C84520B53E9300F79E7C /* CMAVPlayerTests */,
+				DE11C85020B53E9300F79E7C /* CMAVPlayerUITests */,
+				DE11C82C20B53E9000F79E7C /* Products */,
+				221D5AE9B994255617BED129 /* Pods */,
+				2B151CF3A4B568A0C016D0EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE11C82C20B53E9000F79E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C82B20B53E9000F79E7C /* CMAVPlayer.app */,
+				DE11C84220B53E9300F79E7C /* CMAVPlayerTests.xctest */,
+				DE11C84D20B53E9300F79E7C /* CMAVPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE11C82D20B53E9000F79E7C /* CMAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C9B220B5457300F79E7C /* 1241_5bcc269bc8400733b98aa1f9b24b5925_20180416094812.mp4 */,
+				DE11C87220B53FC400F79E7C /* CMAVPlayer */,
+				DE11C89020B540E300F79E7C /* Global */,
+				DE11C88720B5408300F79E7C /* UIBase */,
+				DE11C8FF20B541F000F79E7C /* ViewControllers */,
+				DE11C82E20B53E9000F79E7C /* AppDelegate.swift */,
+				DE11C83220B53E9000F79E7C /* Main.storyboard */,
+				DE11C83820B53E9200F79E7C /* Assets.xcassets */,
+				DE11C83A20B53E9200F79E7C /* LaunchScreen.storyboard */,
+				DE11C83D20B53E9200F79E7C /* Info.plist */,
+				DE11C83520B53E9000F79E7C /* CMAVPlayer.xcdatamodeld */,
+			);
+			path = CMAVPlayer;
+			sourceTree = "<group>";
+		};
+		DE11C84520B53E9300F79E7C /* CMAVPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C84620B53E9300F79E7C /* CMAVPlayerTests.swift */,
+				DE11C84820B53E9300F79E7C /* Info.plist */,
+			);
+			path = CMAVPlayerTests;
+			sourceTree = "<group>";
+		};
+		DE11C85020B53E9300F79E7C /* CMAVPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C85120B53E9300F79E7C /* CMAVPlayerUITests.swift */,
+				DE11C85320B53E9300F79E7C /* Info.plist */,
+			);
+			path = CMAVPlayerUITests;
+			sourceTree = "<group>";
+		};
+		DE11C87220B53FC400F79E7C /* CMAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C87320B53FC400F79E7C /* CMBufferingBackgroundView.swift */,
+				DE11C87420B53FC400F79E7C /* CMAVPlayer.swift */,
+				DE11C87520B53FC400F79E7C /* CMSliderView.swift */,
+				DE11C87620B53FC400F79E7C /* CMAVPlayerHeaderView.swift */,
+				DE11C87720B53FC400F79E7C /* CMAVPlayerFooterView.swift */,
+				DE11C87920B53FC400F79E7C /* CMBrightnessView.swift */,
+				DE11C87A20B53FC400F79E7C /* CMSlider.swift */,
+				DE11C87B20B53FC400F79E7C /* CMPlayerFailView.swift */,
+				DE11C97920B5440F00F79E7C /* Images */,
+			);
+			path = CMAVPlayer;
+			sourceTree = "<group>";
+		};
+		DE11C88720B5408300F79E7C /* UIBase */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C88820B5408300F79E7C /* CMNavigationController.swift */,
+				DE11C88A20B5408300F79E7C /* CMBaseViewController.swift */,
+				DE11C88B20B5408300F79E7C /* CMTabBarController.swift */,
+			);
+			path = UIBase;
+			sourceTree = "<group>";
+		};
+		DE11C89020B540E300F79E7C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C88520B5402A00F79E7C /* CMCommonTool.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		DE11C8FF20B541F000F79E7C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C96E20B5422400F79E7C /* home */,
+				DE11C97320B5424800F79E7C /* community */,
+				DE11C97620B5426200F79E7C /* personal Center */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DE11C96E20B5422400F79E7C /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C96F20B5422E00F79E7C /* CMHomeViewController.swift */,
+				DE11C97120B5423300F79E7C /* CMHomeNextViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		DE11C97320B5424800F79E7C /* community */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C97420B5425A00F79E7C /* CMCommunityViewController.swift */,
+			);
+			path = community;
+			sourceTree = "<group>";
+		};
+		DE11C97620B5426200F79E7C /* personal Center */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C97720B5427900F79E7C /* CMPersonalCenterViewController.swift */,
+			);
+			path = "personal Center";
+			sourceTree = "<group>";
+		};
+		DE11C97920B5440F00F79E7C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DE11C87820B53FC400F79E7C /* brightness.png */,
+				DE11C97A20B5443C00F79E7C /* Player_back_full.png */,
+				DE11C97B20B5443C00F79E7C /* Player_back_full@2x.png */,
+				DE11C97C20B5443C00F79E7C /* Player_back_full@3x.png */,
+				DE11C98120B5446D00F79E7C /* Player_close.png */,
+				DE11C98020B5446D00F79E7C /* Player_close@3x.png */,
+				DE11C98520B5447B00F79E7C /* Player_fullscreen.png */,
+				DE11C98420B5447B00F79E7C /* Player_fullscreen@2x.png */,
+				DE11C98620B5447B00F79E7C /* Player_fullscreen@3x.png */,
+				DE11C98A20B5448900F79E7C /* Player_lock-nor.png */,
+				DE11C98C20B5448900F79E7C /* Player_lock-nor@2x.png */,
+				DE11C98B20B5448900F79E7C /* Player_lock-nor@3x.png */,
+				DE11C99020B5449400F79E7C /* Player_pause.png */,
+				DE11C99220B5449500F79E7C /* Player_pause@2x.png */,
+				DE11C99120B5449400F79E7C /* Player_pause@3x.png */,
+				DE11C99620B5449E00F79E7C /* Player_play_btn_small@2x.png */,
+				DE11C99920B544AC00F79E7C /* Player_play.png */,
+				DE11C99A20B544AC00F79E7C /* Player_play@2x.png */,
+				DE11C99820B544AC00F79E7C /* Player_play@3x.png */,
+				DE11C99E20B544B800F79E7C /* Player_repeat_video@2x.png */,
+				DE11C99F20B544B800F79E7C /* Player_repeat_video@3x.png */,
+				DE11C9A320B544C300F79E7C /* Player_shrinkscreen.png */,
+				DE11C9A220B544C300F79E7C /* Player_shrinkscreen@2x.png */,
+				DE11C9A420B544C300F79E7C /* Player_shrinkscreen@3x.png */,
+				DE11C9A920B544CD00F79E7C /* Player_unlock-nor.png */,
+				DE11C9A820B544CD00F79E7C /* Player_unlock-nor@2x.png */,
+				DE11C9AA20B544CD00F79E7C /* Player_unlock-nor@3x.png */,
+				DE11C9AE20B544DD00F79E7C /* sliderBtnImage@2x.png */,
+				DE11C9AF20B544DD00F79E7C /* sliderBtnImage@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE11C82A20B53E9000F79E7C /* CMAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE11C85620B53E9300F79E7C /* Build configuration list for PBXNativeTarget "CMAVPlayer" */;
+			buildPhases = (
+				056A7CEEB4762534988CEDB0 /* [CP] Check Pods Manifest.lock */,
+				DE11C82720B53E9000F79E7C /* Sources */,
+				DE11C82820B53E9000F79E7C /* Frameworks */,
+				DE11C82920B53E9000F79E7C /* Resources */,
+				4C1E4953BFC888A496DDC9CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMAVPlayer;
+			productName = CMAVPlayer;
+			productReference = DE11C82B20B53E9000F79E7C /* CMAVPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE11C84120B53E9300F79E7C /* CMAVPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE11C85920B53E9300F79E7C /* Build configuration list for PBXNativeTarget "CMAVPlayerTests" */;
+			buildPhases = (
+				DE11C83E20B53E9300F79E7C /* Sources */,
+				DE11C83F20B53E9300F79E7C /* Frameworks */,
+				DE11C84020B53E9300F79E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE11C84420B53E9300F79E7C /* PBXTargetDependency */,
+			);
+			name = CMAVPlayerTests;
+			productName = CMAVPlayerTests;
+			productReference = DE11C84220B53E9300F79E7C /* CMAVPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE11C84C20B53E9300F79E7C /* CMAVPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE11C85C20B53E9300F79E7C /* Build configuration list for PBXNativeTarget "CMAVPlayerUITests" */;
+			buildPhases = (
+				DE11C84920B53E9300F79E7C /* Sources */,
+				DE11C84A20B53E9300F79E7C /* Frameworks */,
+				DE11C84B20B53E9300F79E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE11C84F20B53E9300F79E7C /* PBXTargetDependency */,
+			);
+			name = CMAVPlayerUITests;
+			productName = CMAVPlayerUITests;
+			productReference = DE11C84D20B53E9300F79E7C /* CMAVPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE11C82320B53E9000F79E7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = HMW;
+				TargetAttributes = {
+					DE11C82A20B53E9000F79E7C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					DE11C84120B53E9300F79E7C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DE11C82A20B53E9000F79E7C;
+					};
+					DE11C84C20B53E9300F79E7C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DE11C82A20B53E9000F79E7C;
+					};
+				};
+			};
+			buildConfigurationList = DE11C82620B53E9000F79E7C /* Build configuration list for PBXProject "CMAVPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE11C82220B53E9000F79E7C;
+			productRefGroup = DE11C82C20B53E9000F79E7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE11C82A20B53E9000F79E7C /* CMAVPlayer */,
+				DE11C84120B53E9300F79E7C /* CMAVPlayerTests */,
+				DE11C84C20B53E9300F79E7C /* CMAVPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE11C82920B53E9000F79E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11C83C20B53E9200F79E7C /* LaunchScreen.storyboard in Resources */,
+				DE11C9AC20B544CE00F79E7C /* Player_unlock-nor.png in Resources */,
+				DE11C98E20B5448900F79E7C /* Player_lock-nor@3x.png in Resources */,
+				DE11C9B120B544DD00F79E7C /* sliderBtnImage@3x.png in Resources */,
+				DE11C97E20B5443D00F79E7C /* Player_back_full@2x.png in Resources */,
+				DE11C9B320B5457300F79E7C /* 1241_5bcc269bc8400733b98aa1f9b24b5925_20180416094812.mp4 in Resources */,
+				DE11C9A120B544B800F79E7C /* Player_repeat_video@3x.png in Resources */,
+				DE11C98D20B5448900F79E7C /* Player_lock-nor.png in Resources */,
+				DE11C9A620B544C300F79E7C /* Player_shrinkscreen.png in Resources */,
+				DE11C98320B5446D00F79E7C /* Player_close.png in Resources */,
+				DE11C9A720B544C300F79E7C /* Player_shrinkscreen@3x.png in Resources */,
+				DE11C97D20B5443D00F79E7C /* Player_back_full.png in Resources */,
+				DE11C98820B5447B00F79E7C /* Player_fullscreen.png in Resources */,
+				DE11C98920B5447B00F79E7C /* Player_fullscreen@3x.png in Resources */,
+				DE11C9A520B544C300F79E7C /* Player_shrinkscreen@2x.png in Resources */,
+				DE11C99520B5449500F79E7C /* Player_pause@2x.png in Resources */,
+				DE11C9AB20B544CE00F79E7C /* Player_unlock-nor@2x.png in Resources */,
+				DE11C99420B5449500F79E7C /* Player_pause@3x.png in Resources */,
+				DE11C98220B5446D00F79E7C /* Player_close@3x.png in Resources */,
+				DE11C97F20B5443D00F79E7C /* Player_back_full@3x.png in Resources */,
+				DE11C83920B53E9200F79E7C /* Assets.xcassets in Resources */,
+				DE11C99720B5449E00F79E7C /* Player_play_btn_small@2x.png in Resources */,
+				DE11C99B20B544AD00F79E7C /* Player_play@3x.png in Resources */,
+				DE11C9A020B544B800F79E7C /* Player_repeat_video@2x.png in Resources */,
+				DE11C9AD20B544CE00F79E7C /* Player_unlock-nor@3x.png in Resources */,
+				DE11C9B020B544DD00F79E7C /* sliderBtnImage@2x.png in Resources */,
+				DE11C88120B53FC400F79E7C /* brightness.png in Resources */,
+				DE11C98720B5447B00F79E7C /* Player_fullscreen@2x.png in Resources */,
+				DE11C99320B5449500F79E7C /* Player_pause.png in Resources */,
+				DE11C99C20B544AD00F79E7C /* Player_play.png in Resources */,
+				DE11C98F20B5448900F79E7C /* Player_lock-nor@2x.png in Resources */,
+				DE11C83420B53E9000F79E7C /* Main.storyboard in Resources */,
+				DE11C99D20B544AD00F79E7C /* Player_play@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11C84020B53E9300F79E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11C84B20B53E9300F79E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		056A7CEEB4762534988CEDB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CMAVPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C1E4953BFC888A496DDC9CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CMAVPlayer/Pods-CMAVPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CMAVPlayer/Pods-CMAVPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE11C82720B53E9000F79E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11C97220B5423300F79E7C /* CMHomeNextViewController.swift in Sources */,
+				DE11C88620B5402A00F79E7C /* CMCommonTool.swift in Sources */,
+				DE11C88E20B5408300F79E7C /* CMBaseViewController.swift in Sources */,
+				DE11C97820B5427900F79E7C /* CMPersonalCenterViewController.swift in Sources */,
+				DE11C88F20B5408300F79E7C /* CMTabBarController.swift in Sources */,
+				DE11C97520B5425A00F79E7C /* CMCommunityViewController.swift in Sources */,
+				DE11C87C20B53FC400F79E7C /* CMBufferingBackgroundView.swift in Sources */,
+				DE11C87F20B53FC400F79E7C /* CMAVPlayerHeaderView.swift in Sources */,
+				DE11C97020B5422E00F79E7C /* CMHomeViewController.swift in Sources */,
+				DE11C88220B53FC400F79E7C /* CMBrightnessView.swift in Sources */,
+				DE11C88320B53FC400F79E7C /* CMSlider.swift in Sources */,
+				DE11C88020B53FC400F79E7C /* CMAVPlayerFooterView.swift in Sources */,
+				DE11C87D20B53FC400F79E7C /* CMAVPlayer.swift in Sources */,
+				DE11C82F20B53E9000F79E7C /* AppDelegate.swift in Sources */,
+				DE11C83720B53E9000F79E7C /* CMAVPlayer.xcdatamodeld in Sources */,
+				DE11C87E20B53FC400F79E7C /* CMSliderView.swift in Sources */,
+				DE11C88C20B5408300F79E7C /* CMNavigationController.swift in Sources */,
+				DE11C88420B53FC400F79E7C /* CMPlayerFailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11C83E20B53E9300F79E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11C84720B53E9300F79E7C /* CMAVPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11C84920B53E9300F79E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11C85220B53E9300F79E7C /* CMAVPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE11C84420B53E9300F79E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE11C82A20B53E9000F79E7C /* CMAVPlayer */;
+			targetProxy = DE11C84320B53E9300F79E7C /* PBXContainerItemProxy */;
+		};
+		DE11C84F20B53E9300F79E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE11C82A20B53E9000F79E7C /* CMAVPlayer */;
+			targetProxy = DE11C84E20B53E9300F79E7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE11C83220B53E9000F79E7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE11C83320B53E9000F79E7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE11C83A20B53E9200F79E7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE11C83B20B53E9200F79E7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE11C85420B53E9300F79E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE11C85520B53E9300F79E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE11C85720B53E9300F79E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 950914412DA0CCDDD8841FCA /* Pods-CMAVPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CMAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Your-world.CMAVPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE11C85820B53E9300F79E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91AF6ED491DC5ECB29ADB50 /* Pods-CMAVPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CMAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Your-world.CMAVPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE11C85A20B53E9300F79E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CMAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Your-world.CMAVPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMAVPlayer.app/CMAVPlayer";
+			};
+			name = Debug;
+		};
+		DE11C85B20B53E9300F79E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CMAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Your-world.CMAVPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMAVPlayer.app/CMAVPlayer";
+			};
+			name = Release;
+		};
+		DE11C85D20B53E9300F79E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CMAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Your-world.CMAVPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CMAVPlayer;
+			};
+			name = Debug;
+		};
+		DE11C85E20B53E9300F79E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CMAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Your-world.CMAVPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CMAVPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE11C82620B53E9000F79E7C /* Build configuration list for PBXProject "CMAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11C85420B53E9300F79E7C /* Debug */,
+				DE11C85520B53E9300F79E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE11C85620B53E9300F79E7C /* Build configuration list for PBXNativeTarget "CMAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11C85720B53E9300F79E7C /* Debug */,
+				DE11C85820B53E9300F79E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE11C85920B53E9300F79E7C /* Build configuration list for PBXNativeTarget "CMAVPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11C85A20B53E9300F79E7C /* Debug */,
+				DE11C85B20B53E9300F79E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE11C85C20B53E9300F79E7C /* Build configuration list for PBXNativeTarget "CMAVPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11C85D20B53E9300F79E7C /* Debug */,
+				DE11C85E20B53E9300F79E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE11C83520B53E9000F79E7C /* CMAVPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE11C83620B53E9000F79E7C /* CMAVPlayer.xcdatamodel */,
+			);
+			currentVersion = DE11C83620B53E9000F79E7C /* CMAVPlayer.xcdatamodel */;
+			path = CMAVPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DE11C82320B53E9000F79E7C /* Project object */;
+}

@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+use_frameworks!
+target 'CMAVPlayer' do
+    pod 'SnapKit'#约束布局
+    pod 'Hue'#十六进制颜色转换
+end
+
